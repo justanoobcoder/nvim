@@ -1,1 +1,2 @@
 require 'global'
+require 'settings'
