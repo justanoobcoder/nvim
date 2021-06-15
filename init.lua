@@ -4,3 +4,4 @@ require 'keybindings'
 require 'plugins'
 
 require 'nv-lspconfig'
+require 'nv-compe'
