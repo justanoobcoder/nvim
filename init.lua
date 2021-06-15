@@ -6,3 +6,5 @@ require 'plugins'
 require 'nv-lspconfig'
 require 'nv-compe'
 require 'nv-vsnip'
+
+require 'nv-nvimtree'
