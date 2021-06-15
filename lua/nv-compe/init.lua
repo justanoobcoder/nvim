@@ -1,7 +1,7 @@
-cmd [[packadd nvim-lspconfig]]
-cmd [[packadd nvim-compe]]
+CMD [[packadd nvim-lspconfig]]
+CMD [[packadd nvim-compe]]
 
-o.completeopt = "menuone,noselect"
+O.completeopt = "menuone,noselect"
 
 require "compe".setup {
     enabled = true,
