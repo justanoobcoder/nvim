@@ -1,5 +1,5 @@
-cmd [[packadd nvim-lspconfig]]
-cmd [[packadd nvim-compe]]
+CMD [[packadd nvim-lspconfig]]
+CMD [[packadd nvim-compe]]
 
 
 function on_attach(client)
@@ -42,7 +42,7 @@ end
 local lspconf = require "lspconfig"
 local servers = {"html", "cssls", "pyright" , "bashls"}
 
-g.completion_enable_snippet = 'snippets.nvim'
+G.completion_enable_snippet = 'snippets.nvim'
 local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 for k, lang in pairs(servers) do
