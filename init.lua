@@ -9,3 +9,4 @@ require 'nv-vsnip'
 
 require 'nv-nvimtree'
 require 'nv-treesitter'
+require 'nv-lspkind'
