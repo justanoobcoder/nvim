@@ -8,3 +8,4 @@ require 'nv-compe'
 require 'nv-vsnip'
 
 require 'nv-nvimtree'
+require 'nv-treesitter'
