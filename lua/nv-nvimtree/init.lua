@@ -1,20 +1,20 @@
-o.termguicolors = true
-g.nvim_tree_side = "left"
-g.nvim_tree_width = 25
-g.nvim_tree_ignore = {".git", "node_modules", ".cache"}
-g.nvim_tree_auto_open = 0
-g.nvim_tree_auto_close = 0
-g.nvim_tree_quit_on_open = 0
-g.nvim_tree_follow = 1
-g.nvim_tree_indent_markers = 1
-g.nvim_tree_hide_dotfiles = 1
-g.nvim_tree_git_hl = 1
-g.nvim_tree_root_folder_modifier = ":~"
-g.nvim_tree_tab_open = 1
-g.nvim_tree_allow_resize = 1
-g.nvim_tree_show_icons = { git = 1, folders = 1, files = 1 }
+O.termguicolors = true
+G.nvim_tree_side = "left"
+G.nvim_tree_width = 25
+G.nvim_tree_ignore = {".git", "node_modules", ".cache"}
+G.nvim_tree_auto_open = 0
+G.nvim_tree_auto_close = 0
+G.nvim_tree_quit_on_open = 0
+G.nvim_tree_follow = 1
+G.nvim_tree_indent_markers = 1
+G.nvim_tree_hide_dotfiles = 1
+G.nvim_tree_git_hl = 1
+G.nvim_tree_root_folder_modifier = ":~"
+G.nvim_tree_tab_open = 1
+G.nvim_tree_allow_resize = 1
+G.nvim_tree_show_icons = { git = 1, folders = 1, files = 1 }
 
-g.nvim_tree_icons = {
+G.nvim_tree_icons = {
     default = " ",
     symlink = " ",
     git = {
@@ -38,7 +38,7 @@ local get_lua_cb = function(cb_name)
     return string.format(":lua require'nvim-tree'.on_keypress('%s')<CR>", cb_name)
 end
 
-g.nvim_tree_bindings = {
+G.nvim_tree_bindings = {
     ["<CR>"] 			= get_lua_cb("edit"),
     ["o"] 				= get_lua_cb("edit"),
     ["<2-LeftMouse>"] 	= get_lua_cb("edit"),
@@ -66,6 +66,6 @@ g.nvim_tree_bindings = {
     ["q"] 				= get_lua_cb("close")
 }
 
-cmd "hi NvimTreeFolderIcon guifg = #61afef"
-cmd "hi NvimTreeFolderName guifg = #61afef"
-cmd "hi NvimTreeIndentMarker guifg=#383c44"
+CMD "hi NvimTreeFolderIcon guifg = #61afef"
+CMD "hi NvimTreeFolderName guifg = #61afef"
+CMD "hi NvimTreeIndentMarker guifg=#383c44"
