@@ -27,6 +27,7 @@ return require("packer").startup(
         use { "lewis6991/gitsigns.nvim", requires = { "nvim-lua/plenary.nvim" } }
         use "akinsho/nvim-bufferline.lua"
         use "glepnir/galaxyline.nvim"
+        use "voldikss/vim-floaterm"
         use "windwp/nvim-autopairs"
         use "alvan/vim-closetag"
         use { "kyazdani42/nvim-tree.lua", requires = { "kyazdani42/nvim-web-devicons" } }
