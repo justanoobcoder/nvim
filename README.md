@@ -9,5 +9,6 @@
           __/ |                                                                       
          |___/                                                                        
 ```
-![Pic1](./img/pic1.png)
-![Pic2](./img/pic2.png)
+![Pic1](https://raw.githubusercontent.com/justanoobcoder/files/master/nvim/images/pic1.png)
+![Pic2](https://raw.githubusercontent.com/justanoobcoder/files/master/nvim/images/pic2.png)
+![Pic3](https://raw.githubusercontent.com/justanoobcoder/files/master/nvim/images/pic3.png)
