@@ -1,4 +1,4 @@
-G.vsnip_snippet_dir = "~/.config/nvim/snippets"
+G.vsnip_snippet_dir = '~/.config/nvim/snippets'
 CMD ([[
 " pmenu and vim-vsnip
 imap <expr> <Tab>   pumvisible() ? "<C-n>" : vsnip#jumpable(1)   ? "<Plug>(vsnip-jump-next)" : "<Tab>"

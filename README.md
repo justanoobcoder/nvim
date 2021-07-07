@@ -1,4 +1,6 @@
-### Syaoran's Neovim
+
+# Syaoran's Neovim
+
 ```
    _____                                   _                              _           
   / ____|                                 ( )                            (_)          
@@ -9,6 +11,21 @@
           __/ |                                                                       
          |___/                                                                        
 ```
+
+## Contents
+
+- [Screenshots](#screenshots)
+- [Requirements](#requirements)
+
+### Screenshots
+
 ![Pic1](https://raw.githubusercontent.com/justanoobcoder/files/master/nvim/images/pic1.png)
 ![Pic2](https://raw.githubusercontent.com/justanoobcoder/files/master/nvim/images/pic2.png)
 ![Pic3](https://raw.githubusercontent.com/justanoobcoder/files/master/nvim/images/pic3.png)
+![Pic3](https://raw.githubusercontent.com/justanoobcoder/files/master/nvim/images/pic4.png)
+![Pic3](https://raw.githubusercontent.com/justanoobcoder/files/master/nvim/images/pic5.png)
+
+### Requirements
+
+- Neovim (version >=0.5.0), run `nvim -v` to check neovim version.
+- A terminal that supports [nerdfonts](https://github.com/ryanoasis/nerd-fonts).

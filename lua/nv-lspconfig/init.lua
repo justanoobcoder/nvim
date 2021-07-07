@@ -1,6 +1,5 @@
-CMD [[packadd nvim-lspconfig]]
-CMD [[packadd nvim-compe]]
-
+--CMD [[packadd nvim-lspconfig]]
+--CMD [[packadd nvim-compe]]
 
 function on_attach(client)
     local function map(...)
@@ -74,7 +73,7 @@ lspconf.sumneko_lua.setup {
     end,
     settings = {
         Lua = {
-            runtime = {
+                runtime = {
                 version = "LuaJIT",
                 path = vim.split(package.path, ";")
             },

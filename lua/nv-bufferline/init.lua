@@ -1,77 +1,41 @@
--- colors
+vim.opt.termguicolors = true
 
-local bar_fg = "#565c64"
-local activeBuffer_fg = "#c8ccd4"
-
-require "bufferline".setup {
+require('bufferline').setup {
     options = {
-        buffer_close_icon = "",
-        modified_icon = "",
-        close_icon = "",
-        left_trunc_marker = "",
-        right_trunc_marker = "",
-        max_name_length = 14,
-        max_prefix_length = 13,
-        tab_size = 18,
-        enforce_regular_tabs = true,
-        view = "multiwindow",
-        show_buffer_close_icons = true,
-        separator_style = "thin"
-    },
-    highlights = {
-        background = {
-            guifg = bar_fg,
-            guibg = "#1e222a"
+        mappings = false,
+        right_mouse_command = 'vert sbuffer %d',
+        show_close_icon = false,
+        separator_style = os.getenv 'KITTY_WINDOW_ID' and 'slant' or 'padded_slant',
+        diagnostics = 'nvim_lsp',
+        diagnostics_indicator = diagnostics_indicator,
+        custom_filter = custom_filter,
+        offsets = {
+        {
+          filetype = 'NvimTree',
+          text = 'File Explorer',
+          highlight = 'PanelHeading',
+          padding = 1,
         },
-        fill = {
-            guifg = bar_fg,
-            guibg = "#1e222a"
+        {
+          filetype = 'DiffviewFiles',
+          text = 'Diff View',
+          highlight = 'PanelHeading',
+          padding = 1,
         },
-        -- focused window
-        buffer_selected = {
-            guifg = activeBuffer_fg,
-            guibg = "#353b45",
-            gui = "bold"
+        { filetype = 'flutterToolsOutline' },
         },
-        separator_selected = {
-            guifg = "#353b45",
-            guibg = "#353b45"
-        },
-        -- unfocused opened window
-        buffer_visible = {
-            guifg = "#9298a0",
-            guibg = "#282c34"
-        },
-        separator_visible = {
-            guifg = "#282c34",
-            guibg = "#282c34"
-        },
-        separator = {
-            guifg = "#1e222a",
-            guibg = "#1e222a"
-        },
-        indicator_selected = {
-            guifg = "#1e222a",
-            guibg = "#1e222a"
-        },
-        modified_selected = {
-            guifg = "#d0f5c2",
-            guibg = "#353b45"
-        }
     }
 }
 
 local opt = {silent = true}
-
 local map = vim.api.nvim_set_keymap
 
 -- Add new buffer and move to it
-map("n", "<Leader>t", ":tabnew<CR>", opt)
-
+map('n', '<Leader>t', ':tabnew<CR>', opt)
+-- Buffer pick functionality
+map('n', '<Leader>b', ':BufferLinePick<CR>', opt)
 -- Remove a buffer
-map("n", "<Leader>q", ":bd<CR>", opt)
-
+map('n', '<Leader>q', ':bd<CR>', opt)
 -- Switch among buffers
 map('n', '<TAB>', ':bnext<CR>', opt)
 map('n', '<S-TAB>', ':bprevious<CR>', opt)
-

@@ -70,7 +70,7 @@ gls.left[1] = {
     FirstElement = {
         provider = function() return '   ' end,
         highlight = { colors.cyan, colors.section_bg },
-        separator = "",
+        separator = '',
         separator_highlight = {colors.bg, colors.section_bg}
     },
 }
@@ -94,7 +94,7 @@ gls.left[2] = {
             return alias_mode..' '
         end,
         highlight = { colors.bg, colors.bg },
-        separator = "  ",
+        separator = '  ',
         separator_highlight = {colors.bg, colors.section_bg},
     },
 }
@@ -110,7 +110,7 @@ gls.left[4] = {
         provider = 'FileName',
         condition = buffer_not_empty,
         highlight = { colors.fg, colors.section_bg },
-        separator = " ",
+        separator = ' ',
         separator_highlight = {colors.section_bg, colors.bg},
     }
 }
@@ -127,9 +127,9 @@ gls.left[6] = {
             local vcs = require('galaxyline.provider_vcs')
             local branch_name = vcs.get_git_branch()
             if (string.len(branch_name) > 28) then
-                return string.sub(branch_name, 1, 25).."..."
+                return string.sub(branch_name, 1, 25)..'...'
             end
-            return branch_name .. " "
+            return branch_name .. ' '
         end,
         condition = in_git_repo,
         highlight = {colors.fg,colors.bg},
