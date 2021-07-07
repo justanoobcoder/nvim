@@ -14,7 +14,7 @@ local use = require("packer").use
 return require("packer").startup(
     function()
         use { "wbthomason/packer.nvim", opt = true }
-        use { "lukas-reineke/indent-blankline.nvim", branch = "lua" }
+        use "lukas-reineke/indent-blankline.nvim"
 		use "folke/tokyonight.nvim"
         use "norcalli/nvim-colorizer.lua"
         use "nvim-treesitter/nvim-treesitter"
