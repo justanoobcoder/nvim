@@ -50,6 +50,7 @@ Step 3: Run this following command:
 nvim +PackerInstall
 ```
 Step 4: Neovim will be opened. It may show error at first but don't worry, just press Enter. It will ask you something like `OK to remove?`, just press Enter. Then wait for Packer install all plugins. When the plugins are installed, you can close neovim.
+
 Step 5: Enjoy :)
 
 ### Optional
