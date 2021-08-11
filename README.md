@@ -40,7 +40,7 @@ Step 1: Run this following command:
 ```
 git clone https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
 ```
-Step 2: Run these following commands:
+Step 2: Run these following commands (back up your config if you already have one):
 ```
 rm -rf ~/.config/nvim
 git clone https://github.com/justanoobcoder/nvim.git ~/.config/nvim
