@@ -1,7 +1,8 @@
 {
     "Main Function": {
-        "prefix": ["main"],
+        "prefix": ["smain"],
     	"body": [
+            "#include <stdio.h>\n",
     	    "int main() {",
     	    "\t$0\n",
     	    "\treturn 0;",
