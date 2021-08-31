@@ -1,0 +1,56 @@
+{
+    "Main Function": {
+        "prefix": ["imain"],
+    	"body": [
+            "#include <iostream>\n",
+    	    "int main() {",
+    	    "\t$0\n",
+    	    "\treturn 0;",
+    	    "}"
+    	],
+    	"description": "Main function."
+    },
+    
+    "For Loop": {
+    	"prefix": ["for"],
+    	"body": [
+    	    "for (int i = ${1:0}; i < ${2:10}; ${3:++i}) {",
+    	    "\t$0",
+    	    "}"
+    	],
+    	"description": "A for function."
+    },
+    
+    "While Loop": {
+    	"prefix": ["while"],
+    	"body": [
+    	    "while ($1) {",
+    	    "\t$0",
+    	    "}"
+    	],
+    	"description": "While function."
+    },
+    
+    "Do While Loop": {
+    	"prefix": ["do"],
+    	"body": [
+    	    "do {",
+    	    "\t$0",
+    	    "} while ($1);"
+    	],
+    	"description": "Do while function."
+    },
+    
+    "Switch Case": {
+    	"prefix": ["switch"],
+    	"body": [
+    	    "switch ($1) {",
+    	    "\tcase $2:",
+    	    "\t\t$0",
+    	    "\t\tbreak;",
+    	    "\tdefault:",
+    	    "}"
+    	],
+    	"description": "Switch case function."
+    }
+}
