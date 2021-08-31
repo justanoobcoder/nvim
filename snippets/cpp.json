@@ -10,6 +10,14 @@
     	],
     	"description": "Main function."
     },
+
+    "Cout Function": {
+        "prefix": ["sout"],
+    	"body": [
+            "std::cout << $1 << '\\n';"
+    	],
+    	"description": "Cout with newline."
+    },
     
     "For Loop": {
     	"prefix": ["for"],
