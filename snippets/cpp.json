@@ -28,6 +28,16 @@
     	],
     	"description": "A for function."
     },
+
+    "Foreach Loop": {
+    	"prefix": ["fore"],
+    	"body": [
+    	    "for (auto x: $1) {",
+    	    "\t$0",
+    	    "}"
+    	],
+    	"description": "A foreach function."
+    },
     
     "While Loop": {
     	"prefix": ["while"],
