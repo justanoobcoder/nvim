@@ -14,8 +14,8 @@ map('n', '<Space>', '', opt)
 -- Set 'Space' key as leader key
 G.mapleader = ' '
 
--- Copy all file content
-map('n', '<C-a>', [[ <Cmd> %y+<CR>]], opt)
+-- Select all file content
+map('n', '<C-a>', 'ggVG', opt)
 
 -- Replace something with something
 map('n', '<Leader>s', ':%s//g<Left><Left>', { silent = false })
