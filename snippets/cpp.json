@@ -29,14 +29,14 @@
     	"description": "A for function."
     },
 
-    "Foreach Loop": {
+    "For-each Loop": {
     	"prefix": ["fore"],
     	"body": [
-    	    "for (auto x: $1) {",
+    	    "for (auto x : $1) {",
     	    "\t$0",
     	    "}"
     	],
-    	"description": "A foreach function."
+    	"description": "A for-each function."
     },
     
     "While Loop": {
