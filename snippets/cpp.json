@@ -1,5 +1,5 @@
 {
-    "Main Function": {
+    "Main function with iostream": {
         "prefix": ["imain"],
     	"body": [
             "#include <iostream>\n",
@@ -8,10 +8,21 @@
     	    "\treturn 0;",
     	    "}"
     	],
-    	"description": "Main function."
+    	"description": "Create main function with iostream."
     },
 
-    "Cout Function": {
+    "Main function": {
+        "prefix": ["main"],
+    	"body": [
+    	    "int main() {",
+    	    "\t$0\n",
+    	    "\treturn 0;",
+    	    "}"
+    	],
+    	"description": "Create main function."
+    },
+
+    "Cout": {
         "prefix": ["sout"],
     	"body": [
             "std::cout << $1 << '\\n';"
@@ -19,47 +30,47 @@
     	"description": "Cout with newline."
     },
     
-    "For Loop": {
+    "For loop": {
     	"prefix": ["for"],
     	"body": [
     	    "for (int i = ${1:0}; i < ${2:10}; ${3:++i}) {",
     	    "\t$0",
     	    "}"
     	],
-    	"description": "A for function."
+    	"description": "Create a for loop."
     },
 
-    "For-each Loop": {
+    "For-each loop": {
     	"prefix": ["fore"],
     	"body": [
     	    "for (auto x : $1) {",
     	    "\t$0",
     	    "}"
     	],
-    	"description": "A for-each function."
+    	"description": "Create a for-each loop."
     },
     
-    "While Loop": {
+    "While loop": {
     	"prefix": ["while"],
     	"body": [
     	    "while ($1) {",
     	    "\t$0",
     	    "}"
     	],
-    	"description": "While function."
+    	"description": "Create a while loop."
     },
     
-    "Do While Loop": {
+    "Do-while loop": {
     	"prefix": ["do"],
     	"body": [
     	    "do {",
     	    "\t$0",
     	    "} while ($1);"
     	],
-    	"description": "Do while function."
+    	"description": "Create a do-while loop."
     },
     
-    "Switch Case": {
+    "Switch-case": {
     	"prefix": ["switch"],
     	"body": [
     	    "switch ($1) {",
@@ -69,6 +80,27 @@
     	    "\tdefault:",
     	    "}"
     	],
-    	"description": "Switch case function."
-    }
+    	"description": "Create a switch-case function."
+    },
+
+    "Class": {
+        "prefix": ["class"],
+        "body": [
+            "class $1 {",
+            "\t$2",
+            "public:",
+            "\t$1() {}",
+            "};"
+        ],
+        "description": "Create a class."
+    },
+
+    "Struct": {
+        "prefix": ["struct"],
+        "body": [
+            "struct $1 {",
+            "\t$2",
+            "};"
+        ],
+        "description": "Create a struct."
 }
