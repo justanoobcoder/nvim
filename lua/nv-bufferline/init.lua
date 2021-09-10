@@ -2,7 +2,6 @@ vim.opt.termguicolors = true
 
 require('bufferline').setup {
     options = {
-        mappings = false,
         right_mouse_command = 'vert sbuffer %d',
         show_close_icon = false,
         separator_style = os.getenv 'KITTY_WINDOW_ID' and 'slant' or 'padded_slant',
@@ -10,20 +9,22 @@ require('bufferline').setup {
         diagnostics_indicator = diagnostics_indicator,
         custom_filter = custom_filter,
         offsets = {
-        {
-          filetype = 'NvimTree',
-          text = 'File Explorer',
-          highlight = 'PanelHeading',
-          padding = 1,
-        },
-        {
-          filetype = 'DiffviewFiles',
-          text = 'Diff View',
-          highlight = 'PanelHeading',
-          padding = 1,
-        },
-        { filetype = 'flutterToolsOutline' },
-        },
+            {
+                filetype = 'NvimTree',
+                text = 'File Explorer',
+                highlight = 'PanelHeading',
+                padding = 1,
+            },
+            {
+                filetype = 'DiffviewFiles',
+                text = 'Diff View',
+                highlight = 'PanelHeading',
+                padding = 1,
+            },
+            {
+                filetype = 'flutterToolsOutline'
+            }
+        }
     }
 }
 

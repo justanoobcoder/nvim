@@ -1,10 +1,10 @@
--- Basic
+-- Basics
 require 'globals'
 require 'settings'
 require 'keybinds'
 require 'plugins'
 
--- Theme
+-- Themes
 require 'nv-theme'
 -- Status line
 require 'nv-galaxyline'
@@ -24,14 +24,12 @@ require 'nv-telescope'
 require 'nv-lspconfig'
 -- Tab/Auto completion
 require 'nv-compe'
+-- Auto pairs '', "", [], {}, (), ``
+require 'nv-autopairs'
 -- For nice highlighing
 require 'nv-treesitter'
 -- For snippets
 require 'nv-vsnip'
--- Auto pairs '', "", [], {}, (), ``
-require 'nv-autopairs'
--- vscode-like pictograms for neovim lsp completion items
-require 'nv-lspkind'
 -- Provide git signs
 require 'nv-gitsigns'
 -- Smooth scrolling

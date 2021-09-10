@@ -39,7 +39,7 @@ function on_attach(client)
 end
 
 local lspconf = require "lspconfig"
-local servers = {"html", "cssls", "pyright" , "bashls"}
+local servers = {"cssls", "pyright", "bashls"}
 
 G.completion_enable_snippet = 'snippets.nvim'
 local capabilities = vim.lsp.protocol.make_client_capabilities()
@@ -50,6 +50,12 @@ for k, lang in pairs(servers) do
         capabilities = capabilities
     }
 end
+
+-- html lsp settings
+lspconf.html.setup {
+    cmd = { "html-languageserver", "--stdio" };
+    capabilities = capabilities
+}
 
 -- ccls lsp settings
 lspconf.ccls.setup {
