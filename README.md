@@ -55,4 +55,4 @@ Step 5: Enjoy :)
 
 ### Optional
 
-If you're a C/C++ programmer, you may want to install `ccls` for C/C++ language support. Neovim will provide you some autocompletion, errors, warnings,... when you code C/C++ programs.
+If you're a C/C++ programmer, you may want to install `clang` for C/C++ language support. Neovim will provide you some autocompletion, errors, warnings,... when you code C/C++ programs.
