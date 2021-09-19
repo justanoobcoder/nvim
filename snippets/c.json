@@ -1,5 +1,5 @@
 {
-    "Main Function": {
+    "Main function with stdio.h": {
         "prefix": ["smain"],
     	"body": [
             "#include <stdio.h>\n",
@@ -8,9 +8,20 @@
     	    "\treturn 0;",
     	    "}"
     	],
-    	"description": "Main function."
+    	"description": "Main function with stdio.h."
     },
     
+    "Main Function": {
+        "prefix": ["main"],
+    	"body": [
+    	    "int main() {",
+    	    "\t$0\n",
+    	    "\treturn 0;",
+    	    "}"
+    	],
+    	"description": "Main function."
+    },
+
     "For Loop": {
     	"prefix": ["for"],
     	"body": [
