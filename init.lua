@@ -34,5 +34,3 @@ require 'nv-vsnip'
 require 'nv-gitsigns'
 -- Smooth scrolling
 require 'nv-neoscroll'
--- Show warnings, errors list
-require 'nv-trouble'
