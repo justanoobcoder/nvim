@@ -46,7 +46,5 @@ function()
     use { 'lewis6991/gitsigns.nvim', requires = 'nvim-lua/plenary.nvim' }
     -- Smooth scrolling
     use 'karb94/neoscroll.nvim'
-    -- Show warnings, errors list
-    use { 'folke/trouble.nvim', requires = 'kyazdani42/nvim-web-devicons' }
 end
 )
