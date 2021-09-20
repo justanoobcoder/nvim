@@ -17,3 +17,4 @@ WO.linebreak = true
 WO.number = true
 WO.relativenumber = true
 WO.signcolumn = 'yes'
+WO.colorcolumn = '80'
