@@ -32,7 +32,7 @@ local opt = {silent = true}
 local map = vim.api.nvim_set_keymap
 
 -- Add new buffer and move to it
-map('n', '<Leader>t', ':tabnew<CR>', opt)
+map('n', '<Leader>t', ':tabnew ', { silent = false })
 -- Buffer pick functionality
 map('n', '<Leader>b', ':BufferLinePick<CR>', opt)
 -- Remove a buffer
