@@ -17,7 +17,7 @@
 - [Screenshots](#screenshots)
 - [Requirements](#requirements)
 - [Installation](#installation)
-- [Optional](#optinal)
+- [Optional](#optional)
 
 ### Screenshots
 
