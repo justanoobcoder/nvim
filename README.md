@@ -29,7 +29,7 @@
 
 ### Requirements
 
-- Neovim (version >=0.5.1), run `nvim -v` to check neovim version.
+- Neovim (version >=0.5.1 or nightly version), run `nvim -v` to check neovim version.
 - Tree-sitter.
 - Ripgrep.
 - A terminal that supports [nerdfonts](https://github.com/ryanoasis/nerd-fonts).
