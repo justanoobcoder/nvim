@@ -20,16 +20,14 @@ require 'nv-floaterm'
 require 'nv-bufferline'
 -- Make finding stuff easier
 require 'nv-telescope'
--- Neovim LSP
+-- Collection of configurations for built-in LSP client
 require 'nv-lspconfig'
--- Tab/Auto completion
-require 'nv-compe'
+-- For snippets
+require 'nv-vsnip'
 -- Auto pairs '', "", [], {}, (), ``
 require 'nv-autopairs'
 -- For nice highlighing
 require 'nv-treesitter'
--- For snippets
-require 'nv-vsnip'
 -- Provide git signs
 require 'nv-gitsigns'
 -- Smooth scrolling
