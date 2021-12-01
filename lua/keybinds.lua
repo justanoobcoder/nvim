@@ -1,4 +1,4 @@
-local function map(mode, lhs, rhs, opts)
+function map(mode, lhs, rhs, opts)
     local options = {noremap = true}
     if opts then
         options = vim.tbl_extend('force', options, opts)
@@ -12,7 +12,7 @@ local opt = {}
 map('n', '<Space>', '', opt)
 
 -- Set 'Space' key as leader key
-G.mapleader = ' '
+vim.g.mapleader = ' '
 
 -- Select all file content
 map('n', '<C-a>', 'ggVG', opt)
