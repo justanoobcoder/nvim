@@ -5,8 +5,11 @@ if fn.empty(fn.glob(install_path)) > 0 then
         'https://github.com/wbthomason/packer.nvim', install_path})
     vim.cmd 'packadd packer.nvim'
 end
-vim.api.nvim_set_keymap('n', '<Leader>pi', ':PackerInstall<CR>', {})
-vim.api.nvim_set_keymap('n', '<Leader>pu', ':PackerUpdate<CR>', {})
+
+-- Install plugins keybind
+map('n', '<Leader>pi', ':PackerInstall<CR>', {})
+-- Update plugins keybind
+map('n', '<Leader>pu', ':PackerUpdate<CR>', {})
 
 local use = require('packer').use
 

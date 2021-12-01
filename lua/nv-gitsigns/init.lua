@@ -37,6 +37,6 @@ require('gitsigns').setup {
   status_formatter = nil, -- Use default
 }
 
-CMD 'hi DiffAdd guifg=#81A1C1 guibg = none'
-CMD 'hi DiffChange guifg =#3A3E44 guibg = none'
-CMD 'hi DiffModified guifg = #81A1C1 guibg = none'
+vim.cmd 'hi DiffAdd guifg=#81A1C1 guibg = none'
+vim.cmd 'hi DiffChange guifg =#3A3E44 guibg = none'
+vim.cmd 'hi DiffModified guifg = #81A1C1 guibg = none'
