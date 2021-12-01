@@ -36,9 +36,9 @@ function()
     }
     -- Collection of configurations for built-in LSP client
     use 'neovim/nvim-lspconfig'
-    ---- Autocompletion plugin
+    -- Autocompletion plugin
     use 'hrsh7th/nvim-cmp'
-    ---- LSP source for nvim-cmp
+    -- LSP source for nvim-cmp
     use 'hrsh7th/cmp-nvim-lsp'
     -- For snippets
     use 'hrsh7th/cmp-vsnip'
@@ -48,7 +48,6 @@ function()
     -- For path completion
     use 'hrsh7th/cmp-path'
     -- Auto pairs '', "", [], {}, (), ``
-    --use 'jiangmiao/auto-pairs'
     use 'windwp/nvim-autopairs'
     -- For nice highlighting
     use 'nvim-treesitter/nvim-treesitter'
