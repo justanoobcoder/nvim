@@ -1,4 +1,3 @@
-O.hidden = true
 O.clipboard = 'unnamedplus'
 O.hlsearch = false
 O.incsearch = true
