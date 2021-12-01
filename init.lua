@@ -1,5 +1,4 @@
 -- Basics
-require 'globals'
 require 'settings'
 require 'keybinds'
 require 'plugins'
