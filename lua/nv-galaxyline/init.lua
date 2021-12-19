@@ -169,7 +169,7 @@ gls.left[10] = {
 gls.left[11] = {
     DiagnosticError = {
         provider = 'DiagnosticError',
-        icon = '  ',
+        icon = '  ',
         highlight = {colors.red,colors.section_bg}
     }
 }
