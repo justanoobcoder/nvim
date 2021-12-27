@@ -23,7 +23,9 @@ function()
     use 'norcalli/nvim-colorizer.lua'
     -- File explorer
     use { 'lambdalisue/fern.vim',
-        requires = { 'lambdalisue/fern-renderer-nerdfont.vim', 'lambdalisue/nerdfont.vim' }
+        requires = { 'lambdalisue/fern-renderer-nerdfont.vim',
+                    'lambdalisue/nerdfont.vim',
+                    'lambdalisue/fern-git-status.vim' }
     }
     -- For indent line
     use 'lukas-reineke/indent-blankline.nvim'
@@ -37,7 +39,9 @@ function()
     }
     -- Make finding stuff easier
     use { 'nvim-telescope/telescope.nvim',
-        requires = { 'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-fzy-native.nvim' }
+        requires = { 'nvim-lua/popup.nvim',
+                    'nvim-lua/plenary.nvim',
+                    'nvim-telescope/telescope-fzy-native.nvim' }
     }
     -- Collection of configurations for built-in LSP client
     use 'neovim/nvim-lspconfig'
