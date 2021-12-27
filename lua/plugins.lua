@@ -37,7 +37,7 @@ function()
     }
     -- Make finding stuff easier
     use { 'nvim-telescope/telescope.nvim',
-        requires = { 'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim' }
+        requires = { 'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim', 'nvim-telescope/telescope-fzy-native.nvim' }
     }
     -- Collection of configurations for built-in LSP client
     use 'neovim/nvim-lspconfig'
