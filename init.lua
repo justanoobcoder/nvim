@@ -10,7 +10,7 @@ require 'nv-galaxyline'
 -- For hex color
 require 'nv-colorizer'
 -- File explorer
-require 'nv-nvimtree'
+require 'nv-fern'
 -- For indent line
 require 'nv-indentline'
 -- Float terminal
