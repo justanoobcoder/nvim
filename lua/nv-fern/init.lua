@@ -1,3 +1,4 @@
+-- Press ? when you're in fern to see more features
 vim.cmd [[
 let g:fern#renderer = "nerdfont"
 let g:fern_renderer_devicons_loaded = 0
@@ -22,7 +23,7 @@ function! FernInit() abort
   nmap <buffer> r <Plug>(fern-action-rename)
   nmap <buffer> H <Plug>(fern-action-hidden:toggle)
   nmap <buffer> R <Plug>(fern-action-reload)
-  nmap <buffer> M <Plug>(fern-action-mark-toggle)
+  nmap <buffer> M <Plug>(fern-action-mark:toggle)
   nmap <buffer> b <Plug>(fern-action-open:split)
   nmap <buffer> v <Plug>(fern-action-open:vsplit)
   nmap <buffer><nowait> h <Plug>(fern-action-leave)
