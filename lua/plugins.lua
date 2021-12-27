@@ -22,7 +22,9 @@ function()
     -- For hex color
     use 'norcalli/nvim-colorizer.lua'
     -- File explorer
-    use { 'kyazdani42/nvim-tree.lua', requires = 'kyazdani42/nvim-web-devicons' }
+    use { 'lambdalisue/fern.vim',
+        requires = { 'lambdalisue/fern-renderer-nerdfont.vim', 'lambdalisue/nerdfont.vim' }
+    }
     -- For indent line
     use 'lukas-reineke/indent-blankline.nvim'
     -- Commenter
@@ -35,7 +37,7 @@ function()
     }
     -- Make finding stuff easier
     use { 'nvim-telescope/telescope.nvim',
-        requires = { {'nvim-lua/popup.nvim'}, {'nvim-lua/plenary.nvim'} }
+        requires = { 'nvim-lua/popup.nvim', 'nvim-lua/plenary.nvim' }
     }
     -- Collection of configurations for built-in LSP client
     use 'neovim/nvim-lspconfig'
