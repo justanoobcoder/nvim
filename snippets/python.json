@@ -1,0 +1,64 @@
+{
+    "Main function": {
+        "prefix": ["main"],
+    	"body": [
+    	    "def main() -> None:",
+    	    "\t${0:pass}\n",
+    	    "if __name__ == '__main__':",
+    	    "\tmain()"
+    	],
+    	"description": "Create main function."
+    },
+
+    "Function": {
+        "prefix": ["fu"],
+        "body": [
+            "def $1($2) -> ${3:None}:",
+            "\t${0:pass}"
+        ],
+        "description": "Create a function."
+    },
+
+    "Class": {
+        "prefix": ["cls"],
+        "body": [
+            "class $1:",
+            "\tdef __init__(self$2) -> None:",
+            "\t\t${0:pass}"
+        ],
+        "description": "Create a class."
+    },
+
+    "Getter and setter": {
+        "prefix": ["gset"],
+        "body": [
+            "@property",
+            "def $1(self) -> ${2:None}:",
+            "\treturn self.__$1\n",
+            "@$1.setter",
+            "def $1(self, value):",
+            "\tself.__$1 = value"
+        ],
+        "description": "Create getter and setter in class."
+    },
+
+    "Class method": {
+        "prefix": ["clsm"],
+        "body": [
+            "@classmethod",
+            "def $1(cls) -> ${2:None}:",
+            "\t${0:pass}"
+        ],
+        "description": "Create a class method in class."
+    },
+
+    "Static method": {
+        "prefix": ["sttm"],
+        "body": [
+            "@staticmethod",
+            "def $1($2) -> ${3:None}:",
+            "\t${0:pass}"
+        ],
+        "description": "Create a static method in class."
+    }
+}
