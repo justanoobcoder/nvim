@@ -5,6 +5,7 @@ let g:fern_renderer_devicons_loaded = 0
 let g:fern#disable_default_mappings = 1
 
 noremap <silent> <Leader>e :Fern . -drawer -reveal=% -toggle -width=30<CR><C-w>=
+noremap <silent> <Leader>E :Fern %:h -drawer -reveal=% -toggle -width=30<CR><C-w>=
 
 function! FernInit() abort
   nmap <buffer><expr>
