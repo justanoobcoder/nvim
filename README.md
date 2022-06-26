@@ -56,4 +56,6 @@ Step 5: Enjoy :)
 
 ### Optional
 
-If you're a C/C++ programmer, you may want to install `clang` for C/C++ language support. Neovim will provide you some autocompletion, errors, warnings,... when you code C/C++ programs.
+- If you're a C/C++ programmer, you may want to install `clang` for C/C++ language support. Neovim will provide you some autocompletion, errors, warnings,... when you code C/C++ programs.
+- If you want bash language support, you may want to install `bash-language-server` using `npm`: `npm i -g bash-language-server`
+- If you want python support, you may want to install `pyright` using `npm`: `npm i -g pyright`
