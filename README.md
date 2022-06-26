@@ -29,7 +29,7 @@
 
 ### Requirements
 
-- Neovim (version >= 0.6.0 or nightly version), run `nvim -v` to check neovim version.
+- Neovim (version >= 0.7.0), run `nvim -v` to check neovim version.
 - xclip or xsel (copy/paste support)
 - Tree-sitter.
 - Ripgrep.
