@@ -17,4 +17,4 @@ vim.opt.number = true
 vim.opt.relativenumber = true
 vim.opt.signcolumn = 'yes'
 vim.opt.colorcolumn = '80'
-vim.opt.inccommand = 'split'
+vim.opt.guifont = { "JetBrainsMono Nerd Font", ":h10" }
