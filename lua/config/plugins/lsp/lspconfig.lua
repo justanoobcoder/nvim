@@ -3,6 +3,7 @@ return {
   event = { "BufReadPre", "BufNewFile" },
   dependencies = {
     "hrsh7th/cmp-nvim-lsp",
+    "windwp/nvim-ts-autotag",
     { "antosha417/nvim-lsp-file-operations", config = true },
   },
   config = function()
@@ -88,22 +89,38 @@ return {
       on_attach = on_attach,
     })
 
+    -- configure c/c++ server
     lspconfig["clangd"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
+    -- configure bash server
     lspconfig["bashls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
+    -- configure java server
     lspconfig["jdtls"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
 
+    -- configure golang server
     lspconfig["gopls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure dockerfile server
+    lspconfig["dockerls"].setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
+
+    -- configure docker-compose server
+    lspconfig["docker_compose_language_service"].setup({
       capabilities = capabilities,
       on_attach = on_attach,
     })
