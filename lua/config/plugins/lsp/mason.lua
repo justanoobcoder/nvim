@@ -29,6 +29,7 @@ return {
       ensure_installed = {
         "html",
         "jdtls",
+        "tsserver",
         "cssls",
         "lua_ls",
         "bashls",
