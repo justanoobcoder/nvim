@@ -1,4 +1,3 @@
--- Basics
-require 'settings'
-require 'keybinds'
-require 'config.lazy'
+require 'core.settings'
+require 'core.keybinds'
+require 'core.lazy'
