@@ -1,1 +1,4 @@
-vim.opt.tabstop = 2
+local opt = vim.opt
+
+opt.colorcolumn = "80"
+opt.tabstop = 2

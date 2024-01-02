@@ -1,3 +1,2 @@
-require 'core.settings'
-require 'core.keybinds'
-require 'core.lazy'
+-- bootstrap lazy.nvim, LazyVim and your plugins
+require("config.lazy")
