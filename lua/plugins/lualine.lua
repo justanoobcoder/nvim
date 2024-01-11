@@ -42,6 +42,9 @@ return {
         lualine_b = { "branch" },
         lualine_c = {
           {
+            "filename",
+          },
+          {
             "diagnostics",
             symbols = {
               error = icons.diagnostics.Error,
@@ -50,7 +53,6 @@ return {
               hint = icons.diagnostics.Hint,
             },
           },
-          { "filetype", icon_only = true, separator = "", padding = { left = 1, right = 0 } },
         },
         lualine_x = {
           {
@@ -78,6 +80,7 @@ return {
           },
         },
         lualine_y = {
+          { "filetype", icon_only = true, separator = " ", padding = { left = 1, right = 0 } },
           { "progress", separator = " ", padding = { left = 1, right = 0 } },
           { "location", padding = { left = 0, right = 1 } },
         },
