@@ -11,6 +11,7 @@
   "mini.comment": { "branch": "main", "commit": "67f00d3ebbeae15e84584d971d0c32aad4f4f3a4" },
   "mini.indentscope": { "branch": "main", "commit": "5a8369475cd7cd6f207a4d288406d03b0fc48bdb" },
   "mini.pairs": { "branch": "main", "commit": "552062017ff207e1f35f7028bfb3f27c7421d22d" },
+  "neo-tree.nvim": { "branch": "v3.x", "commit": "77d9f484b88fd380386b46ed9206e5374d69d9d8" },
   "noice.nvim": { "branch": "main", "commit": "92433164e2f7118d4122c7674c3834d9511722ba" },
   "nui.nvim": { "branch": "main", "commit": "35da9ca1de0fc4dda96c2e214d93d363c145f418" },
   "nvim-notify": { "branch": "master", "commit": "1576123bff3bed67bc673a3076e591abfe5d8ca9" },
@@ -21,6 +22,7 @@
   "nvim-web-devicons": { "branch": "master", "commit": "db0c864375c198cacc171ff373e76bfce2a85045" },
   "oil.nvim": { "branch": "master", "commit": "c4cc8240f1c71defcb67c45da96e44b968d29e5f" },
   "persistence.nvim": { "branch": "main", "commit": "ad538bfd5336f1335cdb6fd4e0b0eebfa6e12f32" },
+  "plenary.nvim": { "branch": "master", "commit": "55d9fe89e33efd26f532ef20223e5f9430c8b0c0" },
   "vim-illuminate": { "branch": "master", "commit": "3bd2ab64b5d63b29e05691e624927e5ebbf0fb86" },
   "which-key.nvim": { "branch": "main", "commit": "4433e5ec9a507e5097571ed55c02ea9658fb268a" }
 }
