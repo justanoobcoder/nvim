@@ -71,6 +71,9 @@ return {
       function (server_name)
         require("lspconfig")[server_name].setup({ on_attach = on_attach })
       end,
+      ["jdtls"] = function ()
+        return true
+      end,
       ["lua_ls"] = function ()
         local lspconfig = require("lspconfig")
         lspconfig.lua_ls.setup {
