@@ -44,6 +44,12 @@ map("v", "<tab>", ">gv")
 -- Clear search with <esc>
 map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })
 
+-- Replace (Spectre)
+map('n', '<leader>S', '<cmd>lua require("spectre").toggle()<CR>', { desc = "Toggle Spectre" })
+map('n', '<leader>sw', '<cmd>lua require("spectre").open_visual({select_word=true})<CR>', { desc = "Search current word" })
+map('v', '<leader>sw', '<esc><cmd>lua require("spectre").open_visual()<CR>', { desc = "Search current word" })
+map('n', '<leader>sf', '<cmd>lua require("spectre").open_file_search({select_word=true})<CR>', { desc = "Search on current file" })
+
 -- floating terminal
 local lazyterm = function() util.in_terminal(nil, { cwd = util.root() }) end
 map("n", "<leader>ft", lazyterm, { desc = "Terminal (root dir)" })
