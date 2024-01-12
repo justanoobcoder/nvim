@@ -26,7 +26,6 @@ return {
       },
     },
   },
-  ---@param opts MasonSettings | {ensure_installed: string[]}
   config = function(_, opts)
     require("mason").setup(opts)
     local mr = require("mason-registry")
@@ -52,15 +51,5 @@ return {
     else
       ensure_installed()
     end
-    require("mason-lspconfig").setup_handlers {
-        function (server_name)
-            require("lspconfig")[server_name].setup {}
-        end,
-        -- Next, you can provide a dedicated handler for specific servers.
-        -- For example, a handler override for the `rust_analyzer`:
-        -- ["rust_analyzer"] = function ()
-        --     require("rust-tools").setup {}
-        -- end
-    }
   end,
 }
