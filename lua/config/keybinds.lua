@@ -1,24 +1,5 @@
-local function map(mode, lhs, rhs, opts)
-  local keys = require("lazy.core.handler").handlers.keys
-  ---@cast keys LazyKeysHandler
-  local modes = type(mode) == "string" and { mode } or mode
-
-  ---@param m string
-  modes = vim.tbl_filter(function(m)
-    return not (keys.have and keys:have(lhs, m))
-  end, modes)
-
-  -- do not create the keymap if a lazy keys handler exists
-  if #modes > 0 then
-    opts = opts or {}
-    opts.silent = opts.silent ~= false
-    if opts.remap and not vim.g.vscode then
-      ---@diagnostic disable-next-line: no-unknown
-      opts.remap = nil
-    end
-    vim.keymap.set(modes, lhs, rhs, opts)
-  end
-end
+local util = require("util")
+local map = util.map
 
 -- lazy
 map("n", "<leader>l", "<cmd>Lazy<cr>", { desc = "Lazy" })
@@ -35,12 +16,45 @@ map("n", "<C-j>", "<C-w>j", { desc = "Go to lower window", remap = true })
 map("n", "<C-k>", "<C-w>k", { desc = "Go to upper window", remap = true })
 map("n", "<C-l>", "<C-w>l", { desc = "Go to right window", remap = true })
 
+-- buffers
+map("n", "<S-h>", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+map("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
+map("n", "[b", "<cmd>bprevious<cr>", { desc = "Prev buffer" })
+map("n", "]b", "<cmd>bnext<cr>", { desc = "Next buffer" })
+map("n", "<leader>bb", "<cmd>e #<cr>", { desc = "Switch to Other Buffer" })
+
+-- Move Lines
+map("n", "<A-down>", "<cmd>m .+1<cr>==", { desc = "Move down" })
+map("n", "<A-up", "<cmd>m .-2<cr>==", { desc = "Move up" })
+map("i", "<A-down>", "<esc><cmd>m .+1<cr>==gi", { desc = "Move down" })
+map("i", "<A-up>", "<esc><cmd>m .-2<cr>==gi", { desc = "Move up" })
+map("v", "<A-down>", ":m '>+1<cr>gv=gv", { desc = "Move down" })
+map("v", "<A-up>", ":m '<-2<cr>gv=gv", { desc = "Move up" })
+
 -- better indenting
 map("v", "<s-tab>", "<gv")
 map("v", "<tab>", ">gv")
 
 -- Clear search with <esc>
 map({ "i", "n" }, "<esc>", "<cmd>noh<cr><esc>", { desc = "Escape and clear hlsearch" })
+
+-- floating terminal
+local lazyterm = function() util.in_terminal(nil, { cwd = util.root() }) end
+map("n", "<leader>ft", lazyterm, { desc = "Terminal (root dir)" })
+map("n", "<leader>fT", function() util.in_terminal() end, { desc = "Terminal (cwd)" })
+map("n", "<c-/>", lazyterm, { desc = "Terminal (root dir)" })
+
+-- Terminal Mappings
+map("t", "<esc><esc>", "<c-\\><c-n>", { desc = "Enter Normal Mode" })
+map("t", "<C-h>", "<cmd>wincmd h<cr>", { desc = "Go to left window" })
+map("t", "<C-j>", "<cmd>wincmd j<cr>", { desc = "Go to lower window" })
+map("t", "<C-k>", "<cmd>wincmd k<cr>", { desc = "Go to upper window" })
+map("t", "<C-l>", "<cmd>wincmd l<cr>", { desc = "Go to right window" })
+map("t", "<C-/>", "<cmd>close<cr>", { desc = "Hide Terminal" })
+
+-- lazygit
+map("n", "<leader>gg", function() util.in_terminal({ "lazygit" }, { cwd = util.root(), esc_esc = false, ctrl_hjkl = false }) end, { desc = "Lazygit (root dir)" })
+map("n", "<leader>gG", function() util.in_terminal({ "lazygit" }, { esc_esc = false, ctrl_hjkl = false}) end, { desc = "Lazygit (cwd)" })
 
 -- diagnostic
 local diagnostic_goto = function(next, severity)
