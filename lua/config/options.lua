@@ -8,7 +8,6 @@ opt.clipboard = "unnamedplus"
 opt.confirm = true
 opt.cursorline = true
 opt.expandtab = true
-opt.ignorecase = true
 opt.laststatus = 3
 opt.list = true
 opt.mouse = "a"
