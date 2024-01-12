@@ -16,20 +16,7 @@ return {
     local lualine_require = require("lualine_require")
     lualine_require.require = require
     vim.o.laststatus = vim.g.lualine_laststatus
-
-    local icons = {
-      diagnostics = {
-        Error = " ",
-        Warn  = " ",
-        Hint  = " ",
-        Info  = " ",
-      },
-      git = {
-        added    = " ",
-        modified = " ",
-        removed  = " ",
-      },
-    }
+    local icons = require("util").icons
 
     return {
       options = {

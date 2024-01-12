@@ -1,5 +1,20 @@
 local M = {}
 
+M.icons = {
+  diagnostics = {
+    Error = " ",
+    Warn  = " ",
+    Hint  = " ",
+    Info  = " ",
+  },
+  git = {
+    added    = " ",
+    modified = " ",
+    removed  = " ",
+  },
+}
+
+
 function M.root()
   local root_patterns = { ".git", ".clang-format", "pom.xml", "mvnw", "gradlew", "build.gradle" }
   local root_dir = vim.fs.dirname(vim.fs.find(root_patterns, { upward = true })[1])
