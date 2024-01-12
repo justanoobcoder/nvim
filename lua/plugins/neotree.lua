@@ -11,9 +11,7 @@ return {
     {
       "<leader>fe",
       function()
-        local root_patterns = { ".git", ".clang-format", "pom.xml", "mvnw", "gradlew", "build.gradle" }
-        local root_dir = vim.fs.dirname(vim.fs.find(root_patterns, { upward = true })[1])
-        require("neo-tree.command").execute({ toggle = true, dir = root_dir })
+        require("neo-tree.command").execute({ toggle = true, dir = require("util").root() })
       end,
       desc = "Explorer NeoTree (root dir)",
     },
