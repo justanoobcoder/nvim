@@ -55,24 +55,6 @@ return {
     { "<leader>sw", require("util.telescope").telescope("grep_string"), mode = "v", desc = "Selection (root dir)" },
     { "<leader>sW", require("util.telescope").telescope("grep_string", { cwd = false }), mode = "v", desc = "Selection (cwd)" },
     { "<leader>uC", require("util.telescope").telescope("colorscheme", { enable_preview = true }), desc = "Colorscheme with preview" },
-    {
-      "<leader>ss",
-      function()
-        require("telescope.builtin").lsp_document_symbols({
-          symbols = require("lazyvim.config").get_kind_filter(),
-        })
-      end,
-      desc = "Goto Symbol",
-    },
-    {
-      "<leader>sS",
-      function()
-        require("telescope.builtin").lsp_dynamic_workspace_symbols({
-          symbols = require("lazyvim.config").get_kind_filter(),
-        })
-      end,
-      desc = "Goto Symbol (Workspace)",
-    },
   },
   opts = function()
     local actions = require("telescope.actions")
