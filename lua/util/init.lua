@@ -14,19 +14,29 @@ M.icons = {
   },
 }
 
-
 function M.root()
   local root_patterns = { ".git", ".clang-format", "pom.xml", "mvnw", "gradlew", "build.gradle" }
   local root_dir = vim.fs.dirname(vim.fs.find(root_patterns, { upward = true })[1])
   return root_dir
 end
 
+function M.has(plugin)
+  return require("lazy.core.config").spec.plugins[plugin] ~= nil
+end
+
+function M.opts(name)
+  local plugin = require("lazy.core.config").plugins[name]
+  if not plugin then
+    return {}
+  end
+  local Plugin = require("lazy.core.plugin")
+  return Plugin.values(plugin, "opts", false)
+end
+
 function M.map(mode, lhs, rhs, opts)
   local keys = require("lazy.core.handler").handlers.keys
-  ---@cast keys LazyKeysHandler
   local modes = type(mode) == "string" and { mode } or mode
 
-  ---@param m string
   modes = vim.tbl_filter(function(m)
     return not (keys.have and keys:have(lhs, m))
   end, modes)
@@ -48,7 +58,7 @@ function M.in_terminal(cmd, opts)
   opts = vim.tbl_deep_extend("force", {
     ft = "lazyterm",
     size = { width = 0.9, height = 0.9 },
-  }, opts or {}, { persistent = true }) --[[@as LazyTermOpts]]
+  }, opts or {}, { persistent = true })
 
   local termkey = vim.inspect({ cmd = cmd or "shell", cwd = opts.cwd, env = opts.env, count = vim.v.count1 })
 
