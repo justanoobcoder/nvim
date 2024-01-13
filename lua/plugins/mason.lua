@@ -10,11 +10,6 @@ return {
       "dockerfile-language-server",
       "typescript-language-server",
       "css-lsp",
-      "lua-language-server",
-      "jdtls",
-
-      "java-test",
-      "java-debug-adapter",
 
       "stylua",
       "shfmt",
