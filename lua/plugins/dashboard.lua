@@ -39,7 +39,7 @@ return {
           { action = "Telescope projects",                                        desc = " Recent Projects",  icon = " ",  key = "p" },
           { action = "Telescope find_files",                                      desc = " Find File",        icon = " ",  key = "f" },
           { action = "Telescope oldfiles",                                        desc = " Recent Files",     icon = " ",  key = "r" },
-          { action = "Telescope live_grep",                                       desc = " Find Uext",        icon = " ",  key = "g" },
+          { action = "Telescope live_grep",                                       desc = " Find Text",        icon = " ",  key = "g" },
           { action = [[lua require("lazyvim.util").telescope.config_files()()]],  desc = " Neovim Config",    icon = " ",  key = "c" },
           { action = 'lua require("persistence").load()',                         desc = " Restore Session",  icon = " ",  key = "s" },
           { action = "qa",                                                        desc = " Quit",             icon = " ",  key = "q" },
