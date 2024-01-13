@@ -13,6 +13,8 @@ return {
       "fish",
       "go",
       "gomod",
+      "gowork",
+      "gosum",
       "html",
       "java",
       "javascript",

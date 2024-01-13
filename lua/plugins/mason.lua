@@ -1,19 +1,17 @@
 return {
   "williamboman/mason.nvim",
   opts = {
-    ensure_installed = {
-      "html-lsp",
-      "gopls",
-      "clangd",
-      "bash-language-server",
-      "docker-compose-language-service",
-      "dockerfile-language-server",
-      "typescript-language-server",
-      "css-lsp",
-
-      "stylua",
-      "shfmt",
-    },
+    -- ensure_installed = {
+    --   "html-lsp",
+    --   "gopls",
+    --   "clangd",
+    --   "bash-language-server",
+    --   "typescript-language-server",
+    --   "css-lsp",
+    --
+    --   "stylua",
+    --   "shfmt",
+    -- },
     ui = {
       icons = {
         package_installed = "✓",
