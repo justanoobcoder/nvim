@@ -28,6 +28,8 @@ return {
       "make",
       "markdown",
       "markdown_inline",
+      "typescript",
+      "tsx",
       "python",
       "regex",
       "scss",
