@@ -4,9 +4,17 @@ return {
     filetypes = {
       css = {
         names = true,
+        css = true,
+        css_fn = true,
+        RRGGBBAA = false,
+        AARRGGBB = false,
       },
       html = {
         names = true,
+        css = true,
+        css_fn = true,
+        RRGGBBAA = false,
+        AARRGGBB = false,
       },
     },
     user_default_options = {
