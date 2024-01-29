@@ -11,6 +11,23 @@ return {
       },
       html = {
         names = true,
+        tailwind = true,
+        css = true,
+        css_fn = true,
+        RRGGBBAA = false,
+        AARRGGBB = false,
+      },
+      javascript = {
+        names = true,
+        tailwind = true,
+        css = true,
+        css_fn = true,
+        RRGGBBAA = false,
+        AARRGGBB = false,
+      },
+      javascriptreact = {
+        names = true,
+        tailwind = true,
         css = true,
         css_fn = true,
         RRGGBBAA = false,
@@ -18,7 +35,7 @@ return {
       },
     },
     user_default_options = {
-      mode = "virtualtext",
+      mode = "background",
       names = false,
     },
   },
