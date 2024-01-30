@@ -3,14 +3,14 @@ return {
   opts = {
     filetypes = {
       css = {
-        names = false,
+        names = true,
         css = true,
         css_fn = true,
         RRGGBBAA = false,
         AARRGGBB = false,
       },
       html = {
-        names = false,
+        names = true,
         tailwind = true,
         css = true,
         css_fn = true,
@@ -18,7 +18,7 @@ return {
         AARRGGBB = false,
       },
       javascript = {
-        names = false,
+        names = true,
         tailwind = true,
         css = true,
         css_fn = true,
@@ -26,7 +26,7 @@ return {
         AARRGGBB = false,
       },
       javascriptreact = {
-        names = false,
+        names = true,
         tailwind = true,
         css = true,
         css_fn = true,
