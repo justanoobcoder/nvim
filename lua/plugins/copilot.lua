@@ -20,4 +20,8 @@ return {
       help = true,
     },
   },
+  keys = {
+    { "<leader>cc", "<CMD>Copilot enable<CR>", desc = "Enable Copilot" },
+    { "<leader>cC", "<CMD>Copilot disable<CR>", desc = "Disable Copilot" },
+  },
 }
