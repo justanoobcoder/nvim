@@ -38,6 +38,11 @@ return {
       "xml",
       "yaml",
       "yuck",
+      "hyprlang",
     },
   },
+
+  vim.filetype.add({
+    pattern = { [".*/hypr/.*%.conf"] = "hyprlang" },
+  })
 }
