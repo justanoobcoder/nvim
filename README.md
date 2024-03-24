@@ -26,8 +26,8 @@ It also has Copilot support (your Github account must have Copilot to use it).
 - Neovim (version >= 0.9.5), run `nvim -v` to check neovim version
 - Git
 - [Lazygit](https://github.com/jesseduffield/lazygit)
-- C compiler
-- xclip or xsel (copy/paste support)
+- Compilers: c, go, cargo
+- Copy/paste support: xclip/xsel (for Xorg), or wl-clipboard (for wayland)
 - Ripgrep
 - fd
 - A [nerdfont](https://github.com/ryanoasis/nerd-fonts)
@@ -45,7 +45,7 @@ mv ~/.cache/nvim{,.bak}
 ```
 Step 2: Clone this repo to your `~/.config` directory:
 ```
-git clone https://github.com/justanoobcoder/nvim.git ~/.config/nvim
+git clone --depth 1 https://github.com/justanoobcoder/nvim.git ~/.config/nvim
 ```
 Step 3: Run `nvim` and wait for it to install all plugins. When the plugins are installed, you can close neovim.
 
