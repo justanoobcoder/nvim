@@ -15,6 +15,7 @@ return {
       "package.json",
       "go.mod",
       "go.sum",
+      "flake.lock",
     },
   },
 }

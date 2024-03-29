@@ -1,13 +1,12 @@
 return {
   "zbirenbaum/copilot.lua",
   opts = {
-    panel = { enabled = false },
     suggestion = {
       enabled = true,
       auto_trigger = true,
       debounce = 75,
       keymap = {
-        accept = "<C-Right>",
+        accept = "<C-CR>",
         accept_word = false,
         accept_line = false,
         next = "<M-]>",
@@ -15,6 +14,7 @@ return {
         dismiss = "<C-]>",
       },
     },
+    panel = { enabled = false },
     filetypes = {
       markdown = true,
       help = true,

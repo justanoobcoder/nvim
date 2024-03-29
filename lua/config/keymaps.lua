@@ -1,2 +1,3 @@
--- stylua: ignore
-vim.keymap.set("n", "<leader>_", "<C-W>s", { silent = true, desc = "Split window below" })
+-- Keymaps are automatically loaded on the VeryLazy event
+-- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
+-- Add any additional keymaps here
