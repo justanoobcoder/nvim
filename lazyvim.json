@@ -1,13 +1,10 @@
 {
   "extras": [
-    "lazyvim.plugins.extras.coding.copilot",
-    "lazyvim.plugins.extras.lang.go",
-    "lazyvim.plugins.extras.lang.json",
-    "lazyvim.plugins.extras.lang.typescript",
-    "lazyvim.plugins.extras.util.project"
+    "lazyvim.plugins.extras.formatting.prettier",
+    "lazyvim.plugins.extras.lang.nix"
   ],
   "news": {
-    "NEWS.md": "6077"
+    "NEWS.md": "10960"
   },
-  "version": 6
+  "version": 7
 }
